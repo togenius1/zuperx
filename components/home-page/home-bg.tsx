@@ -2,6 +2,7 @@
 import Image from 'next/image';
 
 import classes from './home.module.css';
+import styles from '@/styles/Home.module.css';
 import ButtonGoogle from '../ui/btn-google';
 import ButtonApple from '../ui/btn-apple';
 import homeUrl from '/public/images/HOME.png';
@@ -13,8 +14,6 @@ function HomeBG() {
     const intrinsicWidth = 3600;
     const intrinsicHeight = 1800;
 
-
-
     return (
         <div className={classes.home}>
             <div className={classes.image}>
@@ -24,7 +23,8 @@ function HomeBG() {
                     priority
                     width={intrinsicWidth}
                     height={intrinsicHeight}
-                    className={{
+                    className={styles.logo}
+                    style={{
                         width: '100%',
                         height: 'auto',
                     }}
