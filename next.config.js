@@ -5,7 +5,7 @@ const nextConfig = {
     env: {
         username: 'togenius1@gmail.com',
         app_pass: 'zziypgpeyslyhkgn', // Gmail app password
-          },
+    },
 
     images: {
         remotePatterns: [
