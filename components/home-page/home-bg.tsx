@@ -7,7 +7,7 @@ import ButtonApple from '../ui/btn-apple';
 function HomeBG() {
     // const homeUrl =
     //     'https://zuperx-storage-0648618673334-main.s3.ap-southeast-1.amazonaws.com/public/images/home.png';
-    const homeUrl = '/images/home.png';
+    const homeUrl = '/images/home.webp';
     const intrinsicWidth = 3600;
     const intrinsicHeight = 1800;
 
