@@ -3,7 +3,7 @@ import Image from 'next/image';
 import classes from './home.module.css';
 import ButtonGoogle from '../ui/btn-google';
 import ButtonApple from '../ui/btn-apple';
-import homeImg from '../../public/images/next.svg';
+import homeImg from '../../public/images/next.png';
 
 function HomeBG() {
     // const homeUrl =
