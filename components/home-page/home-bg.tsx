@@ -13,9 +13,7 @@ function HomeBG() {
     const intrinsicWidth = 3600;
     const intrinsicHeight = 1800;
 
-    const imageLoader = ({ src, width, quality }) => {
-        return `https://zuperx.com/${src}?w=${width}&q=${quality || 75}`;
-    };
+
 
     return (
         <div className={classes.home}>
@@ -23,7 +21,6 @@ function HomeBG() {
                 <Image
                     alt='Finaci, Money manager'
                     src={homeUrl}
-                    // loader={imageLoader}
                     priority
                     width={intrinsicWidth}
                     height={intrinsicHeight}
