@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.footer div {
+    margin: 0 1rem;
+    color: #6b6b6b;
+}
+
+.footer div:hover {
+    color: rgb(67, 226, 244);
+}
