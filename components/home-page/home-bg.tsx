@@ -17,15 +17,20 @@ function HomeBG() {
                     alt='Finaci, Money manager'
                     // width={800}
                     // height={200}
+                    quality={100}
                     fill
+                    sizes='100vw'
+                    style={{
+                        objectFit: 'cover',
+                    }}
                     // style={{
                     //     width: '100%',
-                    //     height: '100%',
+                    //     height: 'auto',
                     // }}
                     priority
                 />
-                <ButtonGoogle />
-                <ButtonApple />
+                {/* <ButtonGoogle />
+                <ButtonApple /> */}
             </div>
 
             <h1>Finaci</h1>
