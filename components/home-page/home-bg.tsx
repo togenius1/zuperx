@@ -24,7 +24,7 @@ function HomeBG() {
                     priority
                     width={intrinsicWidth}
                     height={intrinsicHeight}
-                    style={{
+                    className={{
                         width: '100%',
                         height: 'auto',
                     }}
