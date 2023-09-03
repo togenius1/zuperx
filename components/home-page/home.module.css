@@ -11,15 +11,14 @@
 
 .image {
     position: relative;
-    width: 100%; 
-    height: 0; 
-    padding-bottom: 41.67%; /* This maintains a 500px height for a width of 1200px (500/1200 * 100) */
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%; /* This maintains a 500px height for a width of 1200px (500/1200 * 100) */
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     background-color: var(--color-grey-700);
     margin: auto;
 }
-
 
 .home h1 {
     font-size: var(--size-16);
