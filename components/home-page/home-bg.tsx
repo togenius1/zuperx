@@ -3,27 +3,28 @@ import Image from 'next/image';
 import classes from './home.module.css';
 import ButtonGoogle from '../ui/btn-google';
 import ButtonApple from '../ui/btn-apple';
+import homeImg from '/public/images/home.png';
 
 function HomeBG() {
     // const homeUrl =
     //     'https://zuperx-storage-0648618673334-main.s3.ap-southeast-1.amazonaws.com/public/images/home.png';
-    const homeUrl = '/images/home.webp';
+    const homeUrl = '/images/home.png';
     const intrinsicWidth = 3600;
     const intrinsicHeight = 1800;
 
     return (
         <section className={classes.home}>
-            <div >
+            <div className={classes.image}>
                 <Image
-                    src={homeUrl}
+                    src={homeImg}
                     alt='Finaci, Money manager'
-                    width={intrinsicWidth}
-                    height={intrinsicHeight}
+                    // width={intrinsicWidth}
+                    // height={intrinsicHeight}
                     // fill
-                    style={{
-                        height: 'auto',
-                        width: '100%',
-                    }}
+                    // style={{
+                    //     height: 'auto',
+                    //     width: '100%',
+                    // }}
                     priority
                 />
                 <ButtonGoogle />
