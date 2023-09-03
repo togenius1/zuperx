@@ -4,8 +4,6 @@ import Link from 'next/link';
 import classes from './apple.module.css';
 
 function ButtonApple(props: Props) {
-    // const { btnAppleUrl } = props;
-
     return (
         <div className={classes.button}>
             <Link
@@ -20,7 +18,7 @@ function ButtonApple(props: Props) {
                     width={150}
                     height={50}
                     style={{
-                        width: '80%',
+                        width: '100%',
                         height: 'auto',
                     }}
                 />

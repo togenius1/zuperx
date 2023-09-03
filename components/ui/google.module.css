@@ -1,7 +1,10 @@
 .button {
     position: absolute;
     bottom: 0;
-    left: 0.8rem;
-    margin: 10px; 
-    z-index: 1; /* Make the button appear on top of the image */
+    left: 1rem;
+    margin: 10px;
+    z-index: 1;
+    /* background-color: rgb(172, 224, 157); */
+    width: 13rem;
+    height: auto;
 }

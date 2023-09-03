@@ -4,8 +4,6 @@ import Link from 'next/link';
 import classes from './google.module.css';
 
 function ButtonGoogle(props: Props) {
-    // const { btnGoogleUrl } = props;
-
     return (
         <div className={classes.button}>
             <Link
@@ -22,7 +20,7 @@ function ButtonGoogle(props: Props) {
                     width={130}
                     height={50}
                     style={{
-                        width: '90%',
+                        width: '100%',
                         height: 'auto',
                     }}
                 />
