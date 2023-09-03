@@ -18,10 +18,10 @@ function HomeBG() {
                     // width={800}
                     // height={200}
                     fill
-                    style={{
-                        width: '100%',
-                        height: '100%',
-                    }}
+                    // style={{
+                    //     width: '100%',
+                    //     height: '100%',
+                    // }}
                     priority
                 />
                 <ButtonGoogle />

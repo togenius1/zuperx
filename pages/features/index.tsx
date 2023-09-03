@@ -10,22 +10,22 @@ import classes from './features.module.css';
 function FeaturesPage() {
     const [hoveredFeature, setHoveredFeature] = useState<string | null>(null);
 
-    let url: string =
-        'https://zuperx-storage-0648618673334-main.s3.ap-southeast-1.amazonaws.com/public/images/income.png';
+    let url: string = '/images/income.png';
+    // 'https://zuperx-storage-0648618673334-main.s3.ap-southeast-1.amazonaws.com/public/images/income.png';
 
     if (hoveredFeature === 'income') {
-        url =
-            'https://zuperx-storage-0648618673334-main.s3.ap-southeast-1.amazonaws.com/public/images/income.png';
+        url = '/images/income.png';
+        // 'https://zuperx-storage-0648618673334-main.s3.ap-southeast-1.amazonaws.com/public/images/income.png';
     }
 
     if (hoveredFeature === 'spending') {
-        url =
-            'https://zuperx-storage-0648618673334-main.s3.ap-southeast-1.amazonaws.com/public/images/spending.png';
+        url = '/images/spending.png';
+        // 'https://zuperx-storage-0648618673334-main.s3.ap-southeast-1.amazonaws.com/public/images/spending.png';
     }
 
     if (hoveredFeature === 'account') {
-        url =
-            'https://zuperx-storage-0648618673334-main.s3.ap-southeast-1.amazonaws.com/public/images/account.png';
+        url = '/images/account.png';
+        // 'https://zuperx-storage-0648618673334-main.s3.ap-southeast-1.amazonaws.com/public/images/account.png';
     }
 
     return (
@@ -44,7 +44,7 @@ function FeaturesPage() {
                         width={720}
                         height={1600}
                         style={{
-                            width: '20%',
+                            width: '25%',
                             height: 'auto',
                         }}
                     />
