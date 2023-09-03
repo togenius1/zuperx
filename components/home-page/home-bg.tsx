@@ -13,16 +13,21 @@ function HomeBG() {
 
     return (
         <section className={classes.home}>
-            <div className={classes.image}>
+            <div >
                 <Image
                     src={homeUrl}
                     alt='Finaci, Money manager'
                     width={intrinsicWidth}
                     height={intrinsicHeight}
+                    // fill
+                    style={{
+                        height: 'auto',
+                        width: '100%',
+                    }}
                     priority
                 />
-                {/* <ButtonGoogle />
-                <ButtonApple /> */}
+                <ButtonGoogle />
+                <ButtonApple />
             </div>
 
             <h1>Finaci</h1>
