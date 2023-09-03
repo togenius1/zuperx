@@ -11,7 +11,7 @@ function HelpCenterPage() {
                 <meta name='description' content='Send me your message' />
             </Head>
 
-            {/* <ContactForm /> */}
+            <ContactForm />
         </Fragment>
     );
 }
