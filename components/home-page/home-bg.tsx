@@ -7,7 +7,7 @@ import ButtonApple from '../ui/btn-apple';
 function HomeBG() {
     // const homeUrl =
     //     'https://zuperx-storage-0648618673334-main.s3.ap-southeast-1.amazonaws.com/public/images/home.png';
-    const homeUrl = '/images/home.svg';
+    const homeUrl = '/images/home.png';
 
     return (
         <section className={classes.home}>
@@ -15,11 +15,12 @@ function HomeBG() {
                 <Image
                     src={homeUrl}
                     alt='Finaci, Money manager'
-                    width={800}
-                    height={200}
+                    // width={800}
+                    // height={200}
+                    fill
                     style={{
                         width: '100%',
-                        height: 'auto',
+                        height: '100%',
                     }}
                     priority
                 />
