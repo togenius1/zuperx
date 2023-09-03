@@ -15,7 +15,7 @@ function HomeBG() {
     return (
         <section className={classes.home}>
             <div className={classes.image}>
-                <Image
+                {/* <Image
                     src={homeImg}
                     alt='Finaci, Money manager'
                     width={intrinsicWidth}
@@ -26,6 +26,17 @@ function HomeBG() {
                         // objectFit: 'cover',
                     }}
                     priority
+                /> */}
+                <Image
+                    alt='Mountains'
+                    src={homeImg}
+                    placeholder='blur'
+                    quality={100}
+                    fill
+                    sizes='100vw'
+                    style={{
+                        objectFit: 'cover',
+                    }}
                 />
                 <ButtonGoogle />
                 <ButtonApple />
