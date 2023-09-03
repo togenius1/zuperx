@@ -8,6 +8,8 @@ function HomeBG() {
     // const homeUrl =
     //     'https://zuperx-storage-0648618673334-main.s3.ap-southeast-1.amazonaws.com/public/images/home.png';
     const homeUrl = '/images/home.png';
+    const intrinsicWidth = 3600;
+    const intrinsicHeight = 1800;
 
     return (
         <section className={classes.home}>
@@ -15,18 +17,8 @@ function HomeBG() {
                 <Image
                     src={homeUrl}
                     alt='Finaci, Money manager'
-                    // width={800}
-                    // height={200}
-                    quality={100}
-                    fill
-                    sizes='100vw'
-                    style={{
-                        objectFit: 'cover',
-                    }}
-                    // style={{
-                    //     width: '100%',
-                    //     height: 'auto',
-                    // }}
+                    width={intrinsicWidth}
+                    height={intrinsicHeight}
                     priority
                 />
                 {/* <ButtonGoogle />
