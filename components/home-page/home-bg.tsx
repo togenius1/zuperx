@@ -3,7 +3,7 @@ import Image from 'next/image';
 import classes from './home.module.css';
 import ButtonGoogle from '../ui/btn-google';
 import ButtonApple from '../ui/btn-apple';
-import homeImg from '../../public/images/next.png';
+import homeImg from '../../public/images/home.png';
 
 function HomeBG() {
     // const homeUrl =
@@ -18,15 +18,12 @@ function HomeBG() {
                 <Image
                     src={homeImg}
                     alt='Finaci, Money manager'
-                    // width={intrinsicWidth}
-                    // height={intrinsicHeight}
-                    quality={100}
-                    fill
-                    sizes="100vw"
+                    width={intrinsicWidth}
+                    height={intrinsicHeight}
                     style={{
-                        // height: 'auto',
-                        // width: '100%',
-                        objectFit: 'cover',
+                        height: 'auto',
+                        width: '100%',
+                        // objectFit: 'cover',
                     }}
                     priority
                 />
