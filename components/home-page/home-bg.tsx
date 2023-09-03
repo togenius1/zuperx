@@ -4,10 +4,11 @@ import classes from './home.module.css';
 import ButtonGoogle from '../ui/btn-google';
 import ButtonApple from '../ui/btn-apple';
 
-function HomeBG(props: Props) {
+function HomeBG() {
     // const homeUrl =
     //     'https://zuperx-storage-0648618673334-main.s3.ap-southeast-1.amazonaws.com/public/images/home.png';
-    const homeUrl = '/images/home.png';
+    const homeUrl = '/next.svg';
+
     return (
         <section className={classes.home}>
             <div className={classes.image}>
@@ -34,9 +35,3 @@ function HomeBG(props: Props) {
 
 export default HomeBG;
 
-//############ Type ################
-type Props = {
-    // homeUrl: StaticImageData;
-    // btnGoogleUrl: StaticImageData;
-    // btnAppleUrl: StaticImageData;
-};
