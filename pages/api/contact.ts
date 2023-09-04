@@ -30,7 +30,7 @@ async function handler(
         };
         try {
             const result = await insertContact(newMessage);
-            newMessage.id = result.id;
+            newMessage.id = result?.id;
 
             console.log('result:-----------', result);
 
@@ -75,7 +75,7 @@ export default handler;
 
 //############ Type #################
 interface newMessage {
-    id: string;
+    id: string | undefined;
     email: string;
     name: string;
     message: string;

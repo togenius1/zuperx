@@ -15,7 +15,7 @@ export async function insertContact(newContact: ContactType) {
 
 //############ Type ###############
 interface ContactType {
-    id: string;
+    id: string | undefined;
     email: string;
     name: string;
     message: string;
