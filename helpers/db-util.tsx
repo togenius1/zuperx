@@ -1,3 +1,4 @@
+'use client';
 import { DataStore } from 'aws-amplify';
 
 import { Contact } from '@/src/models';
