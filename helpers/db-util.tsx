@@ -1,4 +1,3 @@
-'use client';
 import { DataStore } from 'aws-amplify';
 
 import { Contact } from '@/src/models';
@@ -10,7 +9,7 @@ export async function insertContact(newContact: ContactType) {
 
         return insertedContact;
     } catch (error) {
-        console.log('Error saving post', error);
+        console.log('Error saving Contact', error);
     }
 }
 
