@@ -7,7 +7,6 @@ export async function insertContact(newContact: ContactType) {
     try {
         const insertedContact = await DataStore.save(new Contact(newContact));
 
-        console.log('Post saved successfully!', insertedContact);
         return insertedContact;
     } catch (error) {
         console.log('Error saving post', error);
