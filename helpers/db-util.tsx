@@ -1,20 +1,23 @@
 import { DataStore } from 'aws-amplify';
 
-import { Contact, LazyContact } from '@/src/models';
+import { Contact } from '@/src/models';
 
 // Insert comments
-export async function insertContact(
-    newContact: ContactType
-): Promise<LazyContact> {
-    const insertedContact = await DataStore.save(new Contact(newContact));
+export async function insertContact(newContact: ContactType) {
+    try {
+        const insertedContact = await DataStore.save(new Contact(newContact));
 
-    return insertedContact;
+        console.log('Post saved successfully!', insertedContact);
+        return insertedContact;
+    } catch (error) {
+        console.log('Error saving post', error);
+    }
 }
 
 //############ Type ###############
 interface ContactType {
     id: string;
-    email?: string | null | undefined;
+    email: string;
     name: string;
     message: string;
 }

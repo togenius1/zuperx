@@ -19,7 +19,7 @@ async function sendContactData(contactDetails: ContactDetails) {
     }
 }
 
-function ContactForm({}: Props) {
+function ContactForm() {
     // const [feedbackItems, setFeedbackItems] = useState<any[]>([]);
     const [requestStatus, setRequestStatus] = useState<string | null>(null); // 'pending', 'success', 'error'
     const [requestError, setRequestError] = useState<string | null>(null); // 'error'
@@ -153,7 +153,6 @@ function ContactForm({}: Props) {
 export default ContactForm;
 
 //############# Type ################
-type Props = {};
 
 interface ContactDetails {
     name: string;

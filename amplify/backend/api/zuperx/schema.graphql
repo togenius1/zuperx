@@ -1,6 +1,7 @@
 type Contact @model @auth(rules: [{allow: public}]) {
   id: ID!
-  email: String
-  name: String
-  message: String
+  email: String!
+  name: String!
+  message: String!
 }
+ 
