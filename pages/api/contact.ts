@@ -1,8 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
+import { GraphQLResult } from '@aws-amplify/api';
 
 import { insertContact } from '@/helpers/db-util';
-import { GraphQLResult } from '@aws-amplify/api';
 
 async function handler(
     req: NextApiRequest,
@@ -30,8 +30,7 @@ async function handler(
             message,
         };
         try {
-            const result = await insertContact(newMessage);
-
+            const result: any = await insertContact(newMessage);
             newMessage.id = result?.data?.createContact.id;
 
             console.log('result: ', result);

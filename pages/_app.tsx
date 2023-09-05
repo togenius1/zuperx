@@ -1,9 +1,13 @@
 import Head from 'next/head';
+import { Amplify } from 'aws-amplify';
 
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 
 import Layout from '../components/layout/layout';
+import awsconfig from '../src/aws-exports';
+
+Amplify.configure(awsconfig);
 
 export default function App({ Component, pageProps }: AppProps) {
     return (

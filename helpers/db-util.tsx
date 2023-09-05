@@ -4,9 +4,7 @@ import { createContact } from '@/src/graphql/mutations';
 import { GraphQLResult } from '@aws-amplify/api';
 
 // Insert comments
-export async function insertContact(
-    newContact: ContactType
-): Promise<GraphQLResult<any> | undefined> {
+export async function insertContact(newContact: ContactType) {
     try {
         const insertedContact = await API.graphql({
             query: createContact,
@@ -18,7 +16,7 @@ export async function insertContact(
                 },
             },
         });
-        return insertedContact as GraphQLResult<any>;
+        return insertedContact;
     } catch (error) {
         console.log('Error saving Contact', error);
     }
