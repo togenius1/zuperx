@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import nodemailer from 'nodemailer';
 import { GraphQLResult } from '@aws-amplify/api';
+import nodemailer from 'nodemailer';
 
 import { insertContact } from '@/helpers/db-util';
 
@@ -30,11 +30,10 @@ async function handler(
             message,
         };
         try {
-            const result: any = await insertContact(newMessage);
+            const result: GraphQLResult<any> | undefined = await insertContact(
+                newMessage
+            );
             newMessage.id = result?.data?.createContact.id;
-
-            console.log('result: ', result);
-            console.log('result?.data: ', result?.data?.createContact.id);
 
             const transporter = nodemailer.createTransport({
                 host: 'smtp.gmail.com', // Gmail's SMTP server
