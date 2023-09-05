@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import classes from './google.module.css';
 
-function ButtonGoogle(props: Props) {
+function ButtonGoogle() {
     return (
         <div className={classes.button}>
             <Link
@@ -32,6 +32,3 @@ function ButtonGoogle(props: Props) {
 export default ButtonGoogle;
 
 //######################## Type ##########################
-type Props = {
-    // btnGoogleUrl: StaticImageData;
-};

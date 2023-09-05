@@ -3,9 +3,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 import classes from './features.module.css';
-// import incomeUrl from '../../public/images/income.png';
-// import spendingUrl from '../../public/images/spending.png';
-// import accountUrl from '../../public/images/account.png';
 
 function FeaturesPage() {
     const [hoveredFeature, setHoveredFeature] = useState<string | null>(null);

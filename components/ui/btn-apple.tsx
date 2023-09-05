@@ -1,9 +1,9 @@
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 
 import classes from './apple.module.css';
 
-function ButtonApple(props: Props) {
+function ButtonApple() {
     return (
         <div className={classes.button}>
             <Link
@@ -30,6 +30,3 @@ function ButtonApple(props: Props) {
 export default ButtonApple;
 
 //######################## Type ##########################
-type Props = {
-    // btnAppleUrl: StaticImageData;
-};
