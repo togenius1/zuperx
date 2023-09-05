@@ -35,8 +35,6 @@ async function handler(
             );
             newMessage.id = result?.data?.createContact.id;
 
-            console.log('result: ', result);
-
             const transporter = nodemailer.createTransport({
                 host: 'smtp.gmail.com', // Gmail's SMTP server
                 port: 587, // for Gmail
