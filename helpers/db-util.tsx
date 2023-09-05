@@ -1,11 +1,12 @@
-import { DataStore } from 'aws-amplify';
 import { API } from 'aws-amplify';
 
-import { Contact } from '@/src/models';
 import { createContact } from '@/src/graphql/mutations';
+import { GraphQLResult } from '@aws-amplify/api';
 
 // Insert comments
-export async function insertContact(newContact: ContactType) {
+export async function insertContact(
+    newContact: ContactType
+): Promise<GraphQLResult<any> | undefined> {
     try {
         const insertedContact = await API.graphql({
             query: createContact,
@@ -17,7 +18,7 @@ export async function insertContact(newContact: ContactType) {
                 },
             },
         });
-        return insertedContact;
+        return insertedContact as GraphQLResult<any>;
     } catch (error) {
         console.log('Error saving Contact', error);
     }
@@ -25,7 +26,7 @@ export async function insertContact(newContact: ContactType) {
 
 //############ Type ###############
 interface ContactType {
-    id: string | undefined;
+    id: string;
     email: string;
     name: string;
     message: string;
