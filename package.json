@@ -10,7 +10,7 @@
     },
     "dependencies": {
         "@aws-amplify/api": "^5.4.4",
-        "@aws-amplify/ui-react": "^5.3.0",
+        "@aws-amplify/ui-react": "^4.6.5",
         "@types/node": "^20.5.9",
         "@types/nodemailer": "^6.4.9",
         "@types/react": "18.2.21",
@@ -23,7 +23,7 @@
         "flow-enums-runtime": "^0.0.6",
         "jest-environment-node": "^29.6.4",
         "next": "^13.4.19",
-        "nodemailer": "^6.9.4",
+        "nodemailer": "^6.9.5",
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "sharp": "^0.32.5",
