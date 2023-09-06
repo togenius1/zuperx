@@ -26,9 +26,9 @@ function HomeBG() {
                         height: 'auto',
                     }}
                 />
-        
-                    <ButtonGoogle />
-             
+
+                <ButtonGoogle />
+
                 <ButtonApple />
             </div>
 
