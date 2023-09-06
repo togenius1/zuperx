@@ -25,6 +25,11 @@ function FeaturesPage() {
             'https://zuperx-storage-0648618673334-main.s3.ap-southeast-1.amazonaws.com/public/images/account.png';
     }
 
+    if (hoveredFeature === 'features') {
+        url =
+            'https://zuperx-storage-0648618673334-main.s3.ap-southeast-1.amazonaws.com/public/images/features.png';
+    }
+
     return (
         <Fragment>
             <Head>
@@ -41,10 +46,11 @@ function FeaturesPage() {
                         width={720}
                         height={1600}
                         style={{
-                            width: '25%',
+                            width: '30%',
                             height: 'auto',
                         }}
                     />
+
                     <div className={classes.budget}>
                         <h1
                             className={classes.title}
@@ -58,6 +64,7 @@ function FeaturesPage() {
                             budget, spent amount, and remaining budget for
                             informed expense management.
                         </p>
+                        d
                     </div>
                     <div className={classes.graph}>
                         <h1
@@ -85,6 +92,20 @@ function FeaturesPage() {
                             The Empowering Budget Allocation feature empowers
                             users to allocate budgets to specific categories,
                             enhancing spending control and financial planning.
+                        </p>
+                    </div>
+                    <div className={classes.feature}>
+                        <h1
+                            className={classes.title}
+                            onMouseEnter={() => setHoveredFeature('features')}
+                            onMouseLeave={() => setHoveredFeature('features')}
+                        >
+                            Additional Features
+                        </h1>
+                        <p className={classes.article}>
+                            Data Export: Conveniently export data to Excel, CSV,
+                            or Google Sheets. Data Backup: Automated and secure
+                            data backup solutions.
                         </p>
                     </div>
                 </div>
