@@ -1,10 +1,10 @@
 .button {
     position: absolute;
-    bottom: 0;
+    bottom: 1.0rem;
     left: 15rem;
     margin: 10px; /* Adjust this value to add some spacing */
     z-index: 1; /* Make the button appear on top of the image */
     /* background-color: red; */
-    width: 12rem;
-    height: auto;
+    width: 11rem;
+    height: 3rem;
 }

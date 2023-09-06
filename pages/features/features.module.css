@@ -79,10 +79,6 @@
     max-width: 300px; /* Adjust as needed */
 }
 
-.article strong {
-    font-weight: bold; /* You can add more styles if needed */
-}
-
 .feature-image {
     width: 25%;
     height: auto;

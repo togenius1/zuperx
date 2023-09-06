@@ -64,7 +64,6 @@ function FeaturesPage() {
                             budget, spent amount, and remaining budget for
                             informed expense management.
                         </p>
-                        d
                     </div>
                     <div className={classes.graph}>
                         <h1

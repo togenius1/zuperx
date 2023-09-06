@@ -1,10 +1,10 @@
 .button {
     position: absolute;
-    bottom: 0;
+    bottom: 1rem;
     left: 1rem;
     margin: 10px;
     z-index: 1;
     /* background-color: rgb(172, 224, 157); */
-    width: 13rem;
-    height: auto;
+    width: 12rem;
+    height: 3rem;
 }
