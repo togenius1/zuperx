@@ -8,10 +8,9 @@
 import * as React from "react";
 import { Button, Flex, Grid, TextField } from "@aws-amplify/ui-react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import { Contact } from "../models";
 import { fetchByPath, validateField } from "./utils";
-import { API } from "aws-amplify";
-import { getContact } from "../graphql/queries";
-import { updateContact } from "../graphql/mutations";
+import { DataStore } from "aws-amplify";
 export default function ContactUpdateForm(props) {
   const {
     id: idProp,
@@ -46,12 +45,7 @@ export default function ContactUpdateForm(props) {
   React.useEffect(() => {
     const queryData = async () => {
       const record = idProp
-        ? (
-            await API.graphql({
-              query: getContact,
-              variables: { id: idProp },
-            })
-          )?.data?.getContact
+        ? await DataStore.query(Contact, idProp)
         : contactModelProp;
       setContactRecord(record);
     };
@@ -121,22 +115,17 @@ export default function ContactUpdateForm(props) {
               modelFields[key] = null;
             }
           });
-          await API.graphql({
-            query: updateContact,
-            variables: {
-              input: {
-                id: contactRecord.id,
-                ...modelFields,
-              },
-            },
-          });
+          await DataStore.save(
+            Contact.copyOf(contactRecord, (updated) => {
+              Object.assign(updated, modelFields);
+            })
+          );
           if (onSuccess) {
             onSuccess(modelFields);
           }
         } catch (err) {
           if (onError) {
-            const messages = err.errors.map((e) => e.message).join("\n");
-            onError(modelFields, messages);
+            onError(modelFields, err.message);
           }
         }
       }}

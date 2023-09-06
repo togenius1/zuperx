@@ -2,5 +2,5 @@
   "AppSyncApiName": "zuperx",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
   "DynamoDBEnableServerSideEncryption": false,
-  "AuthModeLastUpdated": "2023-09-04T13:09:30.997Z"
+  "AuthModeLastUpdated": "2023-09-06T12:10:28.284Z"
 }
