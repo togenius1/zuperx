@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
 
-import { insertContact } from '@/helpers/db-util';
+import { insertContact } from '../../helpers/db-util';
 
 async function handler(
     req: NextApiRequest,
@@ -32,7 +32,7 @@ async function handler(
         try {
             const result = await insertContact(newMessage);
 
-            console.log('result-----:', result);
+            // console.log('result-----:', result);
 
             newMessage.id = String(result?.id);
 
