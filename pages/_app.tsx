@@ -4,9 +4,8 @@ import type { AppProps } from 'next/app';
 
 import '../styles/globals.css';
 import Layout from '../components/layout/layout';
-import awsconfig from '../src/aws-exports';
-import '@aws-amplify/ui-react/styles.css';
 
+import awsconfig from '../src/aws-exports';
 Amplify.configure(awsconfig);
 
 function App({ Component, pageProps }: AppProps) {
