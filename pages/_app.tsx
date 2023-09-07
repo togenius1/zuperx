@@ -1,15 +1,15 @@
-import Head from 'next/head';
 import { Amplify } from 'aws-amplify';
-
+import Head from 'next/head';
 import type { AppProps } from 'next/app';
-import '../styles/globals.css';
+import '@aws-amplify/ui-react/styles.css';
 
+import '../styles/globals.css';
 import Layout from '../components/layout/layout';
 import awsconfig from '../src/aws-exports';
 
 Amplify.configure(awsconfig);
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
     return (
         <Layout>
             <Head>
@@ -22,3 +22,5 @@ export default function App({ Component, pageProps }: AppProps) {
         </Layout>
     );
 }
+
+export default App;
