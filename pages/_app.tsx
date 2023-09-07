@@ -1,8 +1,5 @@
 import Head from 'next/head';
 import { Amplify } from 'aws-amplify';
-// import type { WithAuthenticatorProps } from '@aws-amplify/ui-react';
-// import { withAuthenticator } from '@aws-amplify/ui-react';
-import '@aws-amplify/ui-react/styles.css';
 
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
