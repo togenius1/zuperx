@@ -32,8 +32,6 @@ async function handler(
         try {
             const result = await insertContact(newMessage);
 
-            console.log('result-----:', result);
-
             newMessage.id = String(result?.id);
 
             const transporter = nodemailer.createTransport({
