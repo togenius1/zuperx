@@ -1,9 +1,7 @@
 import { DataStore } from 'aws-amplify';
 
-// import { Contact } from 'models';
-import { Contact} from '../src/models'
+import { Contact } from '../src/models';
 
-// Insert comments
 export async function insertContact(newContact: ContactType) {
     try {
         const insertedContact = await DataStore.save(new Contact(newContact));
